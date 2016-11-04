@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/gogreen-two.iml" filepath="$PROJECT_DIR$/gogreen-two.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bootstrap/gogreen-two-bootstrap.iml" filepath="$PROJECT_DIR$/bootstrap/gogreen-two-bootstrap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bootstrap/configuration/gogreen-two-bootstrap-configuration.iml" filepath="$PROJECT_DIR$/bootstrap/configuration/gogreen-two-bootstrap-configuration.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bootstrap/content/gogreen-two-bootstrap-content.iml" filepath="$PROJECT_DIR$/bootstrap/content/gogreen-two-bootstrap-content.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bootstrap/webfiles/gogreen-two-bootstrap-webfiles.iml" filepath="$PROJECT_DIR$/bootstrap/webfiles/gogreen-two-bootstrap-webfiles.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cms/gogreen-two-cms.iml" filepath="$PROJECT_DIR$/cms/gogreen-two-cms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dist/gogreen-two-dist.iml" filepath="$PROJECT_DIR$/dist/gogreen-two-dist.iml" />
+      <module fileurl="file://$PROJECT_DIR$/essentials/gogreen-two-essentials.iml" filepath="$PROJECT_DIR$/essentials/gogreen-two-essentials.iml" />
+      <module fileurl="file://$PROJECT_DIR$/integration-tests/gogreen-two-integration-tests.iml" filepath="$PROJECT_DIR$/integration-tests/gogreen-two-integration-tests.iml" />
+      <module fileurl="file://$PROJECT_DIR$/launcher/gogreen-two-launcher.iml" filepath="$PROJECT_DIR$/launcher/gogreen-two-launcher.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rating-plugin/gogreen-two-rating-plugin.iml" filepath="$PROJECT_DIR$/rating-plugin/gogreen-two-rating-plugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/site/gogreen-two-site.iml" filepath="$PROJECT_DIR$/site/gogreen-two-site.iml" />
+      <module fileurl="file://$PROJECT_DIR$/site-assembly/gogreen-two-site-assembly.iml" filepath="$PROJECT_DIR$/site-assembly/gogreen-two-site-assembly.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright 2010-2016 Hippo B.V. (http://www.onehippo.com)
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.onehippo.gogreen</groupId>
+    <artifactId>gogreen-two</artifactId>
+    <version>2.11.2-SNAPSHOT</version>
+  </parent>
+
+  <name>Hippo Go Green 2.0 Site</name>
+  <artifactId>gogreen-two-site</artifactId>
+  <packaging>war</packaging>
+
+  <properties>
+    <sonar.l10n.locales>en_US,nl_NL,fr_FR</sonar.l10n.locales>
+    <json-lib.version>2.4</json-lib.version>
+    <spring.version>3.0.4.RELEASE</spring.version>
+  </properties>
+
+  <dependencies>
+
+    <dependency>
+      <groupId>com.onehippo.gogreen</groupId>
+      <artifactId>gogreen-two-site-assembly</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>javax.servlet.jsp</groupId>
+      <artifactId>jsp-api</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.taglibs</groupId>
+      <artifactId>taglibs-standard-spec</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.taglibs</groupId>
+      <artifactId>taglibs-standard-impl</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.onehippo.cms7.hst.dependencies</groupId>
+      <artifactId>hst-server-dependencies</artifactId>
+      <type>pom</type>
+    </dependency>
+
+    <dependency>
+      <groupId>org.onehippo.cms7.hst.dependencies</groupId>
+      <artifactId>hst-spring-dependencies</artifactId>
+      <type>pom</type>
+    </dependency>
+
+    <dependency>
+      <groupId>org.onehippo.cms7.hst.dependencies</groupId>
+      <artifactId>hst-client-dependencies</artifactId>
+      <type>pom</type>
+    </dependency>
+
+    <dependency>
+      <groupId>org.onehippo.cms7.hst.components</groupId>
+      <artifactId>hst-security</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.onehippo.cms7</groupId>
+      <artifactId>hippo-plugin-selections-hst-client</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.onehippo.cms7.hst</groupId>
+      <artifactId>hst-mock</artifactId>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>com.onehippo.cms7</groupId>
+      <artifactId>hippo-addon-targeting-demo-data-generator</artifactId>
+      <version>${hippo.addon-targeting.version}</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>com.onehippo.cms7</groupId>
+      <artifactId>hippo-addon-targeting-dependencies-site</artifactId>
+      <type>pom</type>
+    </dependency>
+
+    <!-- TODO: mm: plugin deprecated-->
+    <dependency>
+      <groupId>org.onehippo.forge</groupId>
+      <artifactId>tcmp-component</artifactId>
+      <version>1.09.00</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.onehippo.cms7</groupId>
+      <artifactId>hippo-plugin-sitemap-component</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.freemarker</groupId>
+      <artifactId>freemarker</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>net.java.dev.rome</groupId>
+      <artifactId>rome-fetcher</artifactId>
+      <exclusions>
+        <exclusion>
+          <groupId>xerces</groupId>
+          <artifactId>xercesImpl</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>commons-logging</groupId>
+          <artifactId>commons-logging-api</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>jdom</groupId>
+          <artifactId>jdom</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+
+    <dependency>
+      <groupId>org.onehippo.cms7</groupId>
+      <artifactId>hippo-plugin-taxonomy-api</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.onehippo.cms7</groupId>
+      <artifactId>hippo-plugin-taxonomy-hst-api</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.onehippo.cms7</groupId>
+      <artifactId>hippo-plugin-taxonomy-hstclient</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.json</groupId>
+      <artifactId>json</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.onehippo.cms7.hst.client-modules</groupId>
+      <artifactId>hst-cms-rest</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.onehippo.cms7.hst.client-modules</groupId>
+      <artifactId>hst-page-composer</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.onehippo.cms7.hst.components</groupId>
+      <artifactId>hst-jaxrs</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>net.java.dev.rome</groupId>
+      <artifactId>rome</artifactId>
+      <exclusions>
+        <exclusion>
+          <groupId>jdom</groupId>
+          <artifactId>jdom</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.easymock</groupId>
+      <artifactId>easymock</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.onehippo.cms7.hst.client-modules</groupId>
+      <artifactId>hst-google-analytics-hst</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.onehippo.cms7</groupId>
+      <artifactId>hippo-repository-utilities</artifactId>
+      <version>${hippo.repository.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.onehippo.cms7</groupId>
+      <artifactId>hippo-addon-eforms-hst</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>com.onehippo.cms7</groupId>
+      <artifactId>hippo-addon-targeting-common</artifactId>
+      <version>${hippo.addon-targeting.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.onehippo.cms7</groupId>
+      <artifactId>hippo-addon-targeting-demo-data-loader</artifactId>
+    </dependency>
+
+
+    <dependency>
+      <groupId>com.onehippo.cms7</groupId>
+      <artifactId>hippo-maxmind-geolite2</artifactId>
+      <version>${lib.geolite2.version}</version>
+      <scope>runtime</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>net.sf.json-lib</groupId>
+      <artifactId>json-lib</artifactId>
+      <version>${json-lib.version}</version>
+      <classifier>jdk15</classifier>
+      <exclusions>
+        <exclusion>
+          <groupId>commons-logging</groupId>
+          <artifactId>commons-logging</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+
+    <dependency>
+      <groupId>com.onehippo.cms7</groupId>
+      <artifactId>hippo-addon-targeting-collectors</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.onehippo.cms7</groupId>
+      <artifactId>hippo-plugin-seo-support</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-jexl</artifactId>
+      <version>2.1.1</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.httpcomponents</groupId>
+      <artifactId>httpcore</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.httpcomponents</groupId>
+      <artifactId>httpclient</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework.webflow</groupId>
+      <artifactId>org.springframework.js</artifactId>
+      <version>${lib.spring-js.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.jooq</groupId>
+      <artifactId>joox</artifactId>
+      <version>1.2.0</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.codehaus.jackson</groupId>
+      <artifactId>jackson-core-asl</artifactId>
+      <version>1.9.13</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.onehippo.forge.urlrewriter</groupId>
+      <artifactId>urlrewriter-module-hst</artifactId>
+      <version>${forge.urlrewriter.version}</version>
+    </dependency>
+
+  </dependencies>
+
+  <build>
+    <defaultGoal>package</defaultGoal>
+    <finalName>site</finalName>
+
+    <resources>
+      <resource>
+        <filtering>false</filtering>
+        <directory>src/main/java</directory>
+        <includes>
+          <include>**</include>
+        </includes>
+        <excludes>
+          <exclude>**/*.java</exclude>
+        </excludes>
+      </resource>
+      <resource>
+        <directory>src/main/resources</directory>
+        <filtering>false</filtering>
+        <includes>
+          <include>**</include>
+        </includes>
+      </resource>
+    </resources>
+
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.cargo</groupId>
+        <artifactId>cargo-maven2-plugin</artifactId>
+        <configuration>
+          <configuration>
+            <type>runtime</type>
+          </configuration>
+          <container>
+            <type>remote</type>
+          </container>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-war-plugin</artifactId>
+        <configuration>
+          <attachClasses>true</attachClasses>
+          <classesClassifier>classes</classesClassifier>
+        </configuration>
+      </plugin>
+    </plugins>
+
+  </build>
+
+</project>

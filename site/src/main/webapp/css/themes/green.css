@@ -1,0 +1,38 @@
+/**
+ * Copyright 2011-2013 Hippo B.V. (http://www.onehippo.com)
+ */
+
+/*
+NOTE: 
+This file is served from the repository, you need to upload it to assets/themes for your changes to take effect.
+Please keep this file in sync with that repository binary so that we can track what changed when and why.
+*/
+
+/* General */
+a { color: #007aa6; }
+
+/* Document */
+body { background: #e9e5c1 url(../images/bg-body.png) repeat-x; }
+
+/* Header */
+#hd { background: url(../images/bg-header.png) no-repeat; }
+
+/* Body - General - Right */
+#bd .box-right li.subtitle { color: #007aa6; }
+
+/* Body - General - Pagenav */
+#bd #content #page-nav li.prev a:hover, #bd #content #page-nav li.next a:hover { color: #007aa6; }
+
+/* Body - General - Box */
+#bd .box-general li.subtitle { color: #007aa6; }
+#bd #content .box-bottom li.subtitle { color: #007aa6; }
+
+/* Body - Events - Overview */
+#bd #events #calendar .box .info .date-title { color: #007aa6; }
+#bd #events #calendar .box .info .event-title a { color: #007aa6; }
+
+/* Body - Home */
+#bd #home-news #top-item .next-teaser a { color: #007aa6; }
+
+#bd .display-feeds .more { color: #007aa6; }
+

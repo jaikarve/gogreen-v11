@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!--
+     Copyright 2008-2013 Hippo B.V. (http://www.onehippo.com)
+ -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+    
+    <bean id="customResourceContainers" class="org.springframework.beans.factory.config.ListFactoryBean">
+          <property name="sourceList">
+              <list>
+                  <bean class="com.onehippo.gogreen.gallery.GoGreenGalleryResourceContainer">
+                      <property name="primaryItem" value="hippogallery:original"/>
+                      <property name="mappings">
+                        <bean class="org.springframework.beans.factory.config.MapFactoryBean">
+                          <property name="sourceMap">
+                            <map key-type="java.lang.String" value-type="java.lang.String">
+                              <entry key="hippogallery:thumbnail" value="thumbnail"/>
+                              <entry key="hippogogreengallery:smallthumbnail" value="smallthumbnail"/>
+                              <entry key="hippogogreengallery:largethumbnail" value="largethumbnail"/>
+                              <entry key="hippogogreengallery:mobilethumbnail" value="mobilethumbnail"/>
+                              <entry key="hippogogreengallery:mobilelogo" value="mobilelogo"/>
+                              <entry key="hippogogreengallery:banner" value="banner"/>
+                              <entry key="hippogogreengallery:landscapeimage" value="landscape"/>
+                            </map>
+                          </property>
+                        </bean>
+                      </property>
+                  </bean>
+              </list>
+          </property>
+    </bean>
+    
+</beans>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright 2012-2016 Hippo B.V. (http://www.onehippo.com)
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <artifactId>gogreen-two</artifactId>
+    <groupId>com.onehippo.gogreen</groupId>
+    <version>2.11.2-SNAPSHOT</version>
+  </parent>
+
+  <name>Hippo Go Green 2.0 Site Assembly</name>
+  <artifactId>gogreen-two-site-assembly</artifactId>
+  <packaging>jar</packaging>
+
+  <dependencies>
+
+    <dependency>
+      <groupId>org.apache.cxf</groupId>
+      <artifactId>cxf-rt-rs-security-cors</artifactId>
+      <exclusions>
+        <exclusion>
+          <groupId>com.sun.xml.bind</groupId>
+          <artifactId>jaxb-impl</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+
+  </dependencies>
+
+</project>

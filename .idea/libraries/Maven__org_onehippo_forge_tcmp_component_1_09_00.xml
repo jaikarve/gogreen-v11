@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.onehippo.forge:tcmp-component:1.09.00">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/onehippo/forge/tcmp-component/1.09.00/tcmp-component-1.09.00.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/onehippo/forge/tcmp-component/1.09.00/tcmp-component-1.09.00-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/onehippo/forge/tcmp-component/1.09.00/tcmp-component-1.09.00-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

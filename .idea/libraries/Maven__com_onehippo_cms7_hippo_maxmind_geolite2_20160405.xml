@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.onehippo.cms7:hippo-maxmind-geolite2:20160405">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/onehippo/cms7/hippo-maxmind-geolite2/20160405/hippo-maxmind-geolite2-20160405.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/onehippo/cms7/hippo-maxmind-geolite2/20160405/hippo-maxmind-geolite2-20160405-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/onehippo/cms7/hippo-maxmind-geolite2/20160405/hippo-maxmind-geolite2-20160405-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

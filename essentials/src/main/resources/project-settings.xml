@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--
+  Copyright 2016 Hippo B.V. (http://www.onehippo.com)
+-->
+<project>
+    <name>project-settings</name>
+    <beansFolder>site/src/main/java</beansFolder>
+    <bootstrapModule>bootstrap</bootstrapModule>
+    <cmsModule>cms</cmsModule>
+    <confirmParams>false</confirmParams>
+    <extraTemplates>true</extraTemplates>
+    <projectNamespace>gogreentwo</projectNamespace>
+    <selectedBeansPackage>com.onehippo.gogreen.beans</selectedBeansPackage>
+    <selectedComponentsPackage>com.onehippo.gogreen.components</selectedComponentsPackage>
+    <selectedRestPackage>com.onehippo.gogreen.rest</selectedRestPackage>
+    <setupDone>true</setupDone>
+    <siteModule>site</siteModule>
+    <templateLanguage>freemarker</templateLanguage>
+    <useSamples>true</useSamples>
+    <webfilesSubModule>webfiles</webfilesSubModule>
+</project>
